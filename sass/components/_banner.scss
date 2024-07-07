@@ -1,0 +1,123 @@
+@import "../variable/variable";
+@import "../mixin/font";
+
+.banner_area {
+  position: relative;
+  top: -86px;
+  .slider_item {
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    position: relative;
+
+    .overlay {
+      width: 100%;
+      height: 100%;
+      background: rgba(37, 20, 68, 0.6);
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 100px 0;
+      padding-top: 200px;
+
+      .sub_title {
+        text-align: left;
+        color: $white;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        line-height: 1;
+
+        span {
+          width: 19px;
+          height: 12px;
+          background-color: $primary;
+          border-radius: 100px;
+          display: inline-block;
+          margin-right: 25px;
+          position: relative;
+
+          &::after {
+            position: absolute;
+            left: 5px;
+            top: 0;
+            content: "";
+            width: 20px;
+            height: 100%;
+            border-radius: 100px;
+            border: 1px solid $white;
+          }
+        }
+      }
+
+      .title {
+        color: $white;
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 90px;
+        display: inline-block;
+        overflow: hidden;
+        margin-bottom: 30px;
+        margin-top: 20px;
+      }
+
+      p {
+        color: $white;
+      }
+
+      .theme_btn {
+        background-color: $white;
+        color: $black;
+        margin-top: 40px;
+
+        &::before {
+          border-top: 28px solid $primary;
+          border-bottom: 28px solid $primary;
+          border-left: 28px solid transparent;
+        }
+
+        &::after {
+          border-top: 28px solid $primary;
+          border-bottom: 28px solid $primary;
+          border-left: 28px solid transparent;
+        }
+
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+  .arrow{
+    width: 45px;
+    height: 45px;
+    background-color: $white;
+    opacity: 0.4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $primary;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9;
+    padding: 10px;
+    cursor: pointer;
+    transition: $transition;
+    &:hover{
+      opacity: 1;
+    }
+  }
+  .arrow_left{
+    left: 0;
+  }
+  .arrow_right{
+    right: 0;
+  }
+}

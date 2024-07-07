@@ -1,0 +1,424 @@
+@import "../variable/variable";
+@import "../mixin/font";
+@import "../mixin/line-limit";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+span {
+  display: inline-block;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+button {
+  transition: all 0.3s ease-out 0s;
+}
+
+body {
+  overflow-x: hidden;
+  @include font(16px, 500);
+  color: $black;
+  line-height: normal;
+  font-family: "Outfit", sans-serif;
+}
+
+::selection {
+  background-color: $primary;
+  color: $white;
+}
+
+p {
+  @include font(16px, 500);
+  color: $paragraph;
+  line-height: 180%;
+  font-family: "Poppins", sans-serif;
+}
+
+// reveal image
+.reveal_image {
+  visibility: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform-origin: left;
+  }
+}
+
+.white {
+  color: $white;
+}
+
+.black {
+  color: $black;
+}
+
+.sec-title__tagline {
+  margin: 0;
+  color: var(--ienet-base, #DF2339);
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1em;
+  margin-bottom: 5px;
+}
+
+.sec-title__tagline__left-border {
+  width: 25px;
+  height: 12px;
+  display: inline-block;
+  border: 1px solid var(--ienet-base, #DF2339);
+  border-radius: 100px;
+  position: relative;
+  top: 0;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.sec-title__tagline__left-border::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 18px;
+  height: 100%;
+  background-color: var(--ienet-base, #DF2339);
+  border-radius: 100px;
+  content: "";
+  animation: zumpXX 2s linear infinite;
+}
+
+.sec-title__tagline__right-border {
+  width: 25px;
+  height: 12px;
+  display: inline-block;
+  border: 1px solid var(--ienet-base, #DF2339);
+  border-radius: 100px;
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  overflow: hidden;
+}
+
+.sec-title__tagline__right-border::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 18px;
+  height: 100%;
+  background-color: var(--ienet-base, #DF2339);
+  border-radius: 100px;
+  content: "";
+  animation: zumpXX 2s linear infinite;
+}
+
+.sec-title__title {
+  margin: 0;
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.sec-title__title>span {
+  position: relative;
+  color: var(--ienet-base, #DF2339);
+  overflow: hidden;
+  top: 15px;
+}
+
+.sec-title__title>span::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 7px;
+  content: "";
+  animation: widths 3s linear infinite;
+  background-color: var(--ienet-base, #DF2339);
+  -webkit-mask: url('data:image/svg+xml;utf8,<svg viewBox="0 0 229 7" xmlns="http://www.w3.org/2000/svg"><path d="M229 2.67187C228.139 2.92187 227.429 2.96484 226.707 2.95703C222.57 2.91015 218.428 2.83984 214.291 2.80468C211.131 2.77734 207.866 2.55468 204.835 2.83984C199.487 3.34374 194.151 2.95703 188.826 3.09374C182.696 3.24999 176.505 3.19531 170.336 3.16015C164.983 3.1289 159.63 2.92578 154.26 3.05078C152.173 3.09765 150.057 2.87109 147.969 3.02343C144.893 3.24999 141.839 3.21093 138.774 3.0039C137.375 2.91015 136.042 3.14843 134.67 3.20312C131.039 3.35156 127.402 3.37109 123.765 3.41015C123.126 3.41796 122.432 3.44531 121.855 3.56249C119.8 3.97265 117.59 4.15624 115.441 4.15234C111.782 4.14843 108.234 4.55078 104.558 4.52734C98.3223 4.48437 92.0754 4.74218 85.8342 4.72656C79.8317 4.71484 73.8292 4.67187 67.8267 4.71484C65.5501 4.73046 63.279 4.76953 61.019 4.88281C60.2916 4.91796 59.5587 4.98437 58.8368 4.95703C54.0115 4.78906 49.3028 5.25781 44.5385 5.46484C40.2629 5.64843 35.9929 5.88671 31.7062 6.03515C26.4478 6.21484 21.206 6.53124 15.992 6.89453C11.6886 7.19531 7.57959 6.80468 3.46502 6.36718C1.94913 6.20703 0.072307 4.93749 0.00567426 4.21484C-0.0609585 3.49609 0.577605 3.12499 2.15458 2.95703C6.19141 2.51953 10.356 2.49999 14.4317 2.13281C23.366 1.32421 32.4003 0.816401 41.4901 0.558588C48.6253 0.355463 55.7662 0.273432 62.9181 0.285151C68.4375 0.292963 73.9624 0.164057 79.4763 0.226557C85.4066 0.292963 91.3258 0.164057 97.2506 0.164057C106.585 0.164057 115.924 0.0117134 125.259 0.00390089C133.382 -0.0039116 141.506 0.0742134 149.624 0.281245C164.394 0.660151 179.187 0.886713 193.94 1.38671C204.074 1.73046 214.219 1.96484 224.352 2.28515C225.868 2.32812 227.329 2.48046 229 2.67187Z"/></svg>');
+  mask: url('data:image/svg+xml;utf8,<svg viewBox="0 0 229 7" xmlns="http://www.w3.org/2000/svg"><path d="M229 2.67187C228.139 2.92187 227.429 2.96484 226.707 2.95703C222.57 2.91015 218.428 2.83984 214.291 2.80468C211.131 2.77734 207.866 2.55468 204.835 2.83984C199.487 3.34374 194.151 2.95703 188.826 3.09374C182.696 3.24999 176.505 3.19531 170.336 3.16015C164.983 3.1289 159.63 2.92578 154.26 3.05078C152.173 3.09765 150.057 2.87109 147.969 3.02343C144.893 3.24999 141.839 3.21093 138.774 3.0039C137.375 2.91015 136.042 3.14843 134.67 3.20312C131.039 3.35156 127.402 3.37109 123.765 3.41015C123.126 3.41796 122.432 3.44531 121.855 3.56249C119.8 3.97265 117.59 4.15624 115.441 4.15234C111.782 4.14843 108.234 4.55078 104.558 4.52734C98.3223 4.48437 92.0754 4.74218 85.8342 4.72656C79.8317 4.71484 73.8292 4.67187 67.8267 4.71484C65.5501 4.73046 63.279 4.76953 61.019 4.88281C60.2916 4.91796 59.5587 4.98437 58.8368 4.95703C54.0115 4.78906 49.3028 5.25781 44.5385 5.46484C40.2629 5.64843 35.9929 5.88671 31.7062 6.03515C26.4478 6.21484 21.206 6.53124 15.992 6.89453C11.6886 7.19531 7.57959 6.80468 3.46502 6.36718C1.94913 6.20703 0.072307 4.93749 0.00567426 4.21484C-0.0609585 3.49609 0.577605 3.12499 2.15458 2.95703C6.19141 2.51953 10.356 2.49999 14.4317 2.13281C23.366 1.32421 32.4003 0.816401 41.4901 0.558588C48.6253 0.355463 55.7662 0.273432 62.9181 0.285151C68.4375 0.292963 73.9624 0.164057 79.4763 0.226557C85.4066 0.292963 91.3258 0.164057 97.2506 0.164057C106.585 0.164057 115.924 0.0117134 125.259 0.00390089C133.382 -0.0039116 141.506 0.0742134 149.624 0.281245C164.394 0.660151 179.187 0.886713 193.94 1.38671C204.074 1.73046 214.219 1.96484 224.352 2.28515C225.868 2.32812 227.329 2.48046 229 2.67187Z"/></svg>');
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: left bottom;
+  mask-position: left bottom;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+
+@media (min-width: 768px) {
+  .sec-title__title {
+    font-size: 55px;
+    line-height: 65px;
+  }
+}
+
+.sec-title.text-left .sec-title__tagline__right-border,
+.sec-title.text-end .sec-title__tagline__right-border {
+  display: none;
+}
+
+@keyframes widths {
+  0% {
+    width: 0%;
+  }
+
+  50% {
+    width: 97%;
+    left: 0;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes zumpXX {
+
+  0%,
+  100% {
+    left: -20%;
+  }
+
+  50% {
+    left: 50%;
+  }
+}
+
+.theme_btn {
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+  outline: none !important;
+  background-color: $primary;
+  color: $white;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  letter-spacing: 0;
+  padding: 15px 26px;
+  padding-right: 17px;
+  transition: 500ms;
+  text-transform: capitalize;
+  position: relative;
+  z-index: 9;
+  overflow: hidden;
+  text-align: center;
+
+  svg {
+    width: 22px;
+    height: 22px;
+    margin-left: 6px;
+    position: relative;
+    top: -1px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-top: 28px solid $black;
+    border-bottom: 28px solid $black;
+    border-right: 28px solid transparent;
+    transform: translateX(-100%);
+    transition: 0.6s;
+    z-index: -1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-top: 28px solid $black;
+    border-bottom: 28px solid $black;
+    border-left: 28px solid transparent;
+    transform: translateX(100%);
+    transition: 0.6s;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: $white;
+
+    &::before {
+      transform: translateX(-20%);
+    }
+
+    &::after {
+      transform: translateX(20%);
+    }
+  }
+}
+
+.text-black {
+  color: $black !important;
+}
+
+.stroke_text {
+  @include font(117px, 700);
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
+  color: white;
+  text-transform: uppercase;
+}
+
+// reveal text
+
+.reveal_text>div {
+  background: linear-gradient(to right,
+      $black 50%,
+      rgba(77, 81, 95, 0.1) 50%);
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.reveal_text_white>div {
+  background: linear-gradient(to right,
+      $white 50%,
+      rgba(255, 255, 255, 0.1) 50%);
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.short_p>div {
+  background: linear-gradient(to right,
+      $paragraph 50%,
+      rgba(77, 81, 95, 0.1) 50%);
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+
+// common btn
+
+
+.mb-30 {
+  margin-bottom: 40px
+}
+
+.mt-30 {
+  margin-top: 40px
+}
+
+.mb-40 {
+  margin-bottom: 40px
+}
+
+.mt-40 {
+  margin-top: 40px
+}
+
+.mb-50 {
+  margin-bottom: 50px
+}
+
+.mt-50 {
+  margin-top: 50px
+}
+
+.mb-60 {
+  margin-bottom: 60px
+}
+
+.mt-60 {
+  margin-top: 60px
+}
+
+.mt-30 {
+  margin-top: 30px
+}
+
+.mb-30 {
+  margin-bottom: 30px
+}
+
+// line limit start
+.line-limit-1 {
+  @include line_limit (1 !important);
+}
+
+.line-limit-2 {
+  @include line_limit (2 !important);
+}
+
+.line-limit-3 {
+  @include line_limit (3 !important);
+}
+
+.line-limit-4 {
+  @include line_limit (4 !important);
+}
+
+.line-limit-6 {
+  @include line_limit (6 !important);
+}
+
+.line-limit-7 {
+  @include line_limit (7 !important);
+}
+
+.line-limit-8 {
+  @include line_limit (8 !important);
+}
+
+.line-limit-9 {
+  @include line_limit (9 !important);
+}
+
+.line-limit-10 {
+  @include line_limit (10 !important);
+}

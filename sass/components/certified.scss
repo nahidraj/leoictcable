@@ -1,0 +1,80 @@
+@import "../variable/variable";
+@import "../mixin/font";
+@import "../mixin/gradient-text";
+
+.certified_area {
+  position: relative;
+  z-index: 9;
+  margin-top: -145px;
+
+  .certified_item {
+    position: relative;
+    padding: 40px 55px 40px;
+    transition: $transition;
+    background-color: $white;
+    border-radius: 10px;
+    background-repeat: no-repeat !important;
+    background-size: 200px !important;
+    background-position: top left !important;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.07);
+    z-index: 9;
+
+    .image {
+      max-width: 170px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 9;
+    }
+
+    .text {
+      text-align: center;
+      margin-top: 24px;
+      position: relative;
+      z-index: 9;
+
+      .title {
+        @include font(26px, 700);
+        text-transform: uppercase;
+        margin-bottom: 15px;
+      }
+    }
+
+    .shape {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .certified_label {
+    &:nth-child(2) {
+      .certified_item {
+        .shape {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      .certified_item {
+        .shape {
+          top: unset;
+          left: unset;
+          bottom: 0 !important;
+          right: 0 !important;
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}

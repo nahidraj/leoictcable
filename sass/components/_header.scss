@@ -1,0 +1,411 @@
+@import "../variable/variable";
+@import "../mixin/font";
+
+
+.header_area {
+  padding: 15px 0;
+  position: relative;
+  z-index: 999;
+  background-color: transparent;
+  width: 100%;
+  top: 20px;
+  left: 0;
+  padding: 0 60px;
+
+  .container-fluid {
+    background-color: $white;
+    border-radius: 80px;
+    padding: 14px 24px;
+    padding-right: 20px;
+  }
+
+  .navbar {
+    padding: 0;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0;
+  }
+
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        @include font(17px, 500);
+        color: $black;
+        line-height: normal;
+        position: relative;
+        margin-left: 40px;
+        line-height: 52px;
+        position: relative;
+
+        &::after {
+          width: 19px;
+          height: 6px;
+          background-color: transparent;
+          border-radius: 100px;
+          display: inline-block;
+          margin-right: 25px;
+          content: "";
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          position: absolute;
+          margin-left: 5px;
+          transition: $transition;
+        }
+
+        &::before {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 0;
+          content: "";
+          width: 20px;
+          height: 6px;
+          border-radius: 100px;
+          border: 1px solid transparent;
+          margin-left: -5px;
+          transition: $transition;
+        }
+
+        &:hover {
+          color: $primary;
+
+          &::after {
+            background-color: $primary;
+          }
+
+          &::before {
+            border: 1px solid $black;
+          }
+        }
+      }
+
+      .active {
+        color: $primary;
+
+        &::after {
+          width: 19px;
+          height: 6px;
+          background-color: $primary;
+          border-radius: 100px;
+          display: inline-block;
+          margin-right: 25px;
+          content: "";
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          position: absolute;
+          margin-left: 5px;
+        }
+
+        &::before {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          margin-left: -5px;
+          bottom: 0;
+          content: "";
+          width: 20px;
+          height: 6px;
+          border-radius: 100px;
+          border: 1px solid $black;
+        }
+      }
+    }
+
+    .action {
+      margin-left: 30px;
+    }
+  }
+
+  .menu_right_options {
+    .offcanvas_menubar {
+      background-color: transparent;
+      border: 1px solid $primary;
+      color: $primary;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        background-color: $primary;
+        color: $white;
+      }
+    }
+    .action_btn{
+      .theme_btn{
+        border-radius: 50px;
+      }
+    }
+  }
+}
+
+.sticky-menu {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 0 60px;
+  animation: 700ms ease-in-out 0s normal none 1 running fadeInDown;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+#header-fixed-height.active-height {
+  display: block;
+  height: 86px;
+}
+
+// mobile menu css
+
+.mobile-menu-area {
+  z-index: 999;
+  width: 100%;
+  transition: all linear 0.2s;
+}
+
+.mobile-menu-area .mobile-topbar .bars i {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid $primary;
+  color: $primary;
+  font-size: 18px;
+  text-align: center;
+  line-height: 37px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: $transition;
+}
+
+.mobile-menu-area .mobile-topbar .bars i:hover {
+  background-color: $primary;
+  border-color: $primary;
+  color: $white;
+}
+
+.mobile-menu-area .mobile-topbar .icon i {
+  width: 45px;
+  height: 45px;
+  background-color: $white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 45px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all linear 0.2s;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu-area .mobile-topbar .icon i:hover {
+  background-color: $primary;
+  color: $white;
+  border-color: $primary;
+}
+
+.mobile-menu-area .mobile-menu-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.mobile-menu-area .mobile-menu-main {
+  width: 320px;
+  height: 100%;
+  background-color: $white;
+  position: fixed;
+  top: 0;
+  right: -320px;
+  z-index: 999;
+  overflow-y: scroll;
+  transition-duration: 0.3s;
+}
+
+.mobile-menu-area .mobile-menu-main .logo {
+  padding: 20px;
+}
+
+.mobile-menu-area .mobile-menu-main .close-mobile-menu {
+  position: absolute;
+  top: 22px;
+  right: 10px;
+}
+
+.mobile-menu-area .mobile-menu-main .close-mobile-menu i {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: $black;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all linear 0.2s;
+  transition: $transition;
+}
+
+.mobile-menu-area .mobile-menu-main .close-mobile-menu i:hover {
+  color: $primary;
+}
+
+.mobile-menu-area .mobile-menu-main .menu-body .menu-list {
+  padding-top: 10px;
+}
+
+.mobile-menu-area .mobile-menu-main .menu-body .menu-list ul li a {
+  font-weight: 500;
+  font-size: 15px;
+  color: $black;
+  border-top: 1px solid #ddd;
+  width: 100%;
+  padding: 0px 20px;
+  line-height: 40px;
+  padding-right: 10px;
+  transition: all linear 0.2s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-menu-area .mobile-menu-main .menu-body .menu-list ul li:last-child a {
+  border-bottom: 1px solid #ddd;
+}
+
+.mobile-menu-area .mobile-menu-main .menu-body .menu-list ul li a:hover {
+  color: $primary;
+}
+
+.mobile-menu-area .mobile-menu-main .menu-body .menu-list ul li a i {
+  width: 32px;
+  height: 32px;
+  background-color: $white;
+  text-align: center;
+  line-height: 32px;
+  font-size: 12px;
+  border-radius: 3px;
+  background-color: #f5f5f5;
+  transition: all linear 0.2s;
+}
+
+.mobile-menu-area .mobile-menu-main .menu-body .menu-list ul li a:hover i {
+  background-color: $primary;
+  color: $white;
+}
+
+.mobile-menu-area .mobile-menu-main .menu-body .menu-list ul li ul {
+  padding-left: 0;
+  display: none;
+}
+
+.mobile-menu-area .mobile-menu-main .menu-body .menu-list ul li ul a {
+  padding: 0px 20px;
+  padding-left: 40px;
+}
+
+.mobile-menu-area .mobile-menu-main .menu-body .menu-list ul li ul li:last-child a {
+  border-bottom: 0;
+}
+
+.mobile-menu-area .mobile-menu-main .menu-body .social-icon ul li {
+  display: inline-block;
+}
+
+.mobile-menu-area .mobile-menu-main .social-icon {
+  padding: 20px;
+  text-align: center;
+}
+
+.mobile-menu-area .mobile-menu-main .social-icon ul li {
+  display: inline-block;
+  margin: 0 4px;
+}
+
+.mobile-menu-area .mobile-menu-main .social-icon ul li a {
+  width: 36px;
+  height: 36px;
+  color: $black;
+  text-align: center;
+  line-height: 36px;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+}
+
+.mobile-menu-area .mobile-menu-main .social-icon ul li a:hover {
+  background-color: $primary;
+  color: $white;
+  border-color: $primary;
+}
+
+.mobile-menu-overlay {
+  transition-duration: 0.3s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.mobile-menu-overlay.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.mobile-menu-main.active {
+  right: 0 !important;
+}
+
+.mobile-menu-area .mobile-menu-search {
+  padding: 0 20px 16px;
+}
+
+.mobile-menu-area .mobile-menu-search input {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0 20px;
+  transition: $transition;
+  background-color: #f5f5f5;
+}
+
+.mobile-menu-area .mobile-menu-search input:focus {
+  border-color: $black;
+}
+
+.mobile-menu-area .mobile-menu-search .input-groups button {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: 0;
+}
+
+.mobile-menu-area .menu-action-btn {
+  padding: 20px;
+}
+
+.mobile-menu-area .menu-action-btn a {
+  font-weight: 700;
+  font-family: var(--link-font-family);
+  color: $white;
+  background-color: $primary;
+  padding: 12px 30px;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+.mobile-menu-area .menu-action-btn a:hover {
+  background-color: $black;
+}
+
+.mobile-menu-area .menu-action-btn a i {
+  font-size: 14px;
+  margin-left: 8px;
+}
