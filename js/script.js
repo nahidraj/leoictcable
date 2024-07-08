@@ -66,6 +66,9 @@ $(function () {
   $(".content").each(function (i) {
     let target1 = $(this).find(".about-one__image");
     let target2 = $(this).find(".about-one__content");
+    let target3 = $(this).find(".blog_home_item");
+    let target4 = $(this).find(".faq_info");
+    let target5 = $(this).find(".service-one__item");
     let tl = gsap.timeline({
       scrollTrigger: {
         trigger: $(this),
@@ -74,52 +77,71 @@ $(function () {
         toggleActions: 'play none none none'
       }
     });
-    tl.from(
-      target1,
-      1, {
-        opacity: 0,
-        x: -60,
-      },
-      0
-    );
-    tl.from(
-      target2,
-      1, {
-        opacity: 0,
-        x: 60,
-      },
-      0
-    );
 
+    if (target1.length) {
+      tl.from(
+        target1,
+        1, {
+          opacity: 0,
+          x: -60,
+        },
+        0
+      );
+    }
+    if (target2.length) {
+      tl.from(
+        target2,
+        1, {
+          opacity: 0,
+          x: 60,
+        },
+        0
+      );
+    }
+    if (target3.length) {
+      tl.from(
+        target3,
+        1, {
+          y: 100,
+          opacity: 0,
+          stagger: 0.2,
+        },
+        0
+      );
+    }
+    if (target4.length) {
+      tl.from(
+        target4,
+        1, {
+          opacity: 0,
+          x: 60,
+          stagger: 0.5,
+        },
+        0
+      );
+    }
+    if (target5.length) {
+      tl.from(
+        target5,
+        1, {
+          opacity: 0,
+          x: 60,
+          stagger: 0.1,
+        },
+        0
+      );
+    }
   });
 
-  gsap.from(".blog_home_item", {
-    y: 100,
-    opacity: 0,
-    stagger: 0.2,
-    scrollTrigger: {
-      trigger: ".blog_home_item",
-      scroller: "body",
-      start: "top 100%",
-      // scrub: 0.5,
-    },
-  });
 
+  if ($(".certified_label").length) {
+    gsap.from(".certified_label", {
+      y: 100,
+      opacity: 0,
+      stagger: 0.2,
+    });
+  }
 
-
-  // $('.blog_home_item').each(function (i) {
-  //   let item = $(this);
-  //   var tl = new TimelineMax();
-  //   tl.from(
-  //     item,
-  //     1, {
-  //       opacity: 0,
-  //       y: 100,
-  //       delay: i * 0.2,
-  //     },
-  //     0
-  //   );
-  // });
 
 
   // // for sidebar menu timeline animation
