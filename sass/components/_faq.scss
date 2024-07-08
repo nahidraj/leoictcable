@@ -63,6 +63,10 @@
     padding: 22px 20px 22px 13px;
     padding-left: 75px !important;
 
+    &::after {
+      display: none;
+    }
+
     .arrow {
       width: 45px;
       height: 45px;

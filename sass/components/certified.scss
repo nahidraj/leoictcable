@@ -5,7 +5,7 @@
 .certified_area {
   position: relative;
   z-index: 9;
-  margin-top: -145px;
+  margin-top: -80px;
 
   .certified_item {
     position: relative;
@@ -49,6 +49,7 @@
   }
 
   .certified_label {
+    margin-top: 0;
     &:nth-child(2) {
       .certified_item {
         .shape {

@@ -68,7 +68,7 @@
 
 .main-footer__top__info__icon {
   position: relative;
-  top:-1px;
+  top: -1px;
   margin-right: 10px;
 }
 
@@ -174,9 +174,11 @@
 .main-footer .container {
   position: relative;
 }
-.footer_theme_btn{
+
+.footer_theme_btn {
   border: 1px solid transparent;
-  &:hover{
+
+  &:hover {
     border-color: $white;
   }
 }
@@ -190,7 +192,8 @@
   margin-bottom: 60px;
   padding-bottom: 60px;
   border-bottom: 1px solid rgba(var(--ienet-white-rgb, 255, 255, 255), 0.1);
-  img{
+
+  img {
     background-color: $white;
     border-radius: 10px;
     padding: 10px;
@@ -290,7 +293,8 @@
   margin: 0;
   font-size: 16px;
   color: var(--ienet-text-dark, #9C93AE);
-  a{
+
+  a {
     color: $primary;
   }
 }
@@ -358,6 +362,7 @@
   padding-left: 58px;
   padding-right: 20px;
   border-radius: 6px;
+  padding-right: 196px;
   transition: all 500ms ease;
 }
 
@@ -534,8 +539,11 @@
 }
 
 .footer-widget__gallery a img {
-  max-width: 100%;
-  height: auto;
+  width: 84px;
+  height: 84px;
+  object-fit: cover;
+  overflow: hidden;
+  object-position: center;
 }
 
 .footer-widget__gallery a::after {
@@ -570,7 +578,7 @@
   border-radius: 5px;
   border: 0;
   position: fixed;
-  bottom:-45px;
+  bottom: -45px;
   right: 15px;
   transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   opacity: 0;

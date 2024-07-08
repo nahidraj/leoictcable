@@ -384,7 +384,7 @@ $(function () {
 
   // mobilel menu js
 
-  $(".mobile-topbar .bars i").on("click", function () {
+  $(".mobile-topbar .bars").on("click", function () {
     $(".mobile-menu-overlay,.mobile-menu-main").addClass("active");
     return false;
   });

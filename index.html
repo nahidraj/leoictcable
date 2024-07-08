@@ -47,7 +47,17 @@
               <a class="nav-link" href="factory.html">Factory</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="products.html">Products</a>
+              <a class="nav-link" href="products.html">Products <svg xmlns="http://www.w3.org/2000/svg" width="17"
+                  height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M6 9l6 6l6 -6" /></svg></a>
+              <ul class="list-unstyled sub_menu">
+                <li><a href="#">Fiber Optic Cable</a></li>
+                <li><a href="#">Battery</a></li>
+                <li><a href="#">Solar System</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="gallery.html">Gallery</a>
@@ -59,7 +69,7 @@
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
-          <div class="menu_right_options ms-5 align-items-center d-flex gap-4">
+          <div class="menu_right_options ms-5 align-items-center d-flex gap-4 justify-content-end">
             <button class="offcanvas_menubar">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -88,11 +98,17 @@
         <div class="container">
           <div class="d-flex justify-content-between align-items-center">
             <div class="logo">
-              <a href="index.html"> <img src="images/logo.svg" alt="logo">
+              <a href="index.html"> <img src="images/logo.png" alt="logo">
               </a>
             </div>
             <div class="bars">
-              <i class="fas fa-bars"></i>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M4 6l16 0" />
+                <path d="M4 12l16 0" />
+                <path d="M4 18l16 0" /></svg>
             </div>
           </div>
         </div>
@@ -274,8 +290,8 @@
     <!-- certified area start -->
     <section class="certified_area content">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-4 certified_label">
+        <div class="row g-4 g-lg-4">
+          <div class="col-lg-4 col-md-6 certified_label">
             <div class="certified_item">
               <div class="shape">
                 <img src="images/certified-bg.png" alt="certified-bg">
@@ -288,7 +304,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 certified_label">
+          <div class="col-lg-4 col-md-6 certified_label">
             <div class="certified_item">
               <div class="shape">
                 <img src="images/certified-bg-2.png" alt="certified-bg">
@@ -302,7 +318,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 certified_label">
+          <div class="col-lg-4 col-md-6 certified_label">
             <div class="certified_item">
               <div class="shape">
                 <img src="images/certified-bg.png" alt="certified-bg">
@@ -325,7 +341,7 @@
       <div class="about-one__shape" style="background-image: url(images/about-shape.png);"></div>
       <div class="container">
         <div class="row">
-          <div class="col-xl-6">
+          <div class="col-xl-6 text-center text-xl-start">
             <div class="about-one__image">
               <div class="about-one__image__one">
                 <img src="images/about-image.jpg" alt="ienet">
@@ -338,7 +354,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-6">
+          <div class="col-xl-6 text-center text-xl-start">
             <div class="about-one__content">
               <div class="sec-title text-left">
 
@@ -378,7 +394,7 @@
     <section class="faq-one">
       <div class="container">
         <div class="row">
-          <div class="col-lg-7">
+          <div class="col-lg-7 order-2 order-lg-1  align-self-center">
             <div class="faq-body">
               <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
@@ -386,13 +402,15 @@
                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                       data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                       <span class="arrow"></span>
-                      What is broadband internet? 
+                      What is broadband internet?
                     </button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                       data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus maxime ea quibusdam in molestias praesentium, laboriosam aperiam quod blanditiis, nobis iste harum. Dolores a culpa blanditiis harum est laudantium distinctio.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus maxime ea quibusdam
+                          in molestias praesentium, laboriosam aperiam quod blanditiis, nobis iste harum. Dolores a
+                          culpa blanditiis harum est laudantium distinctio.</p>
                       </div>
                     </div>
                 </div>
@@ -401,13 +419,15 @@
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                       data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                       <span class="arrow"></span>
-                      How does broadband internet work? 
+                      How does broadband internet work?
                     </button>
                   </h4>
                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus maxime ea quibusdam in molestias praesentium, laboriosam aperiam quod blanditiis, nobis iste harum. Dolores a culpa blanditiis harum est laudantium distinctio.</p>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus maxime ea quibusdam in
+                        molestias praesentium, laboriosam aperiam quod blanditiis, nobis iste harum. Dolores a culpa
+                        blanditiis harum est laudantium distinctio.</p>
                     </div>
                   </div>
                 </div>
@@ -416,20 +436,39 @@
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                       data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                       <span class="arrow"></span>
-                      What factors can affect broadband speed? 
+                      What is the difference between upload and download speeds?
                     </button>
                   </h4>
                   <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus maxime ea quibusdam in molestias praesentium, laboriosam aperiam quod blanditiis, nobis iste harum. Dolores a culpa blanditiis harum est laudantium distinctio.</p>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus maxime ea quibusdam in
+                        molestias praesentium, laboriosam aperiam quod blanditiis, nobis iste harum. Dolores a culpa
+                        blanditiis harum est laudantium distinctio.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h4 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      <span class="arrow"></span>
+                      What factors can affect broadband speed?
+                    </button>
+                  </h4>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus maxime ea quibusdam in
+                        molestias praesentium, laboriosam aperiam quod blanditiis, nobis iste harum. Dolores a culpa
+                        blanditiis harum est laudantium distinctio.</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-5">
+          <div class="col-lg-5 border-1 order-lg-2">
             <div class="faq-one__content">
               <div class="sec-title text-left">
 
@@ -489,28 +528,30 @@
         </div>
         <div class="blog-main mt-40">
           <div class="row g-4">
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-6">
               <div class="item blog_home_item">
                 <div class="blog-card">
                   <div class="blog-card__image">
                     <img src="images/blog-1-1.jpeg" alt="Cupidatat Nonproident, Sunt in Culpa qui Officia Deserunt">
                     <img src="images/blog-1-1.jpeg" alt="Cupidatat Nonproident, Sunt in Culpa qui Officia Deserunt">
                     <a href="blog-details.html" class="blog-card__image__link">
-  
+
                     </a>
                     <div class="blog-card__date">04 AUG, 2024</div>
                     <ul class="list-unstyled blog-card__meta">
                       <li><a href="blog-list.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user-circle">
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-user-circle">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
                             <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
                             <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" /></svg> <span
                             class="ms-2">by Admin</span></a></li>
                       <li><a href="blog-details.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-message">
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-message">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M8 9h8" />
                             <path d="M8 13h6" />
@@ -523,9 +564,9 @@
                     <h3 class="blog-card__title"><a href="blog-details.html">Cupidatat Nonproident, Sunt in Culpa qui
                         Officia Deserunt</a></h3>
                     <a href="blog-details.html" class="blog-card__link">
-                      <span class="blog-card__link__front"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                          stroke-linejoin="round"
+                      <span class="blog-card__link__front"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                          height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round"
                           class="icon icon-tabler icons-tabler-outline icon-tabler-chevrons-right">
                           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                           <path d="M7 7l5 5l-5 5" />
@@ -542,28 +583,30 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-6">
               <div class="item blog_home_item">
                 <div class="blog-card">
                   <div class="blog-card__image">
                     <img src="images/blog-1-2.png" alt="Cupidatat Nonproident, Sunt in Culpa qui Officia Deserunt">
                     <img src="images/blog-1-2.png" alt="Cupidatat Nonproident, Sunt in Culpa qui Officia Deserunt">
                     <a href="blog-details.html" class="blog-card__image__link">
-  
+
                     </a>
                     <div class="blog-card__date">04 AUG, 2024</div>
                     <ul class="list-unstyled blog-card__meta">
                       <li><a href="blog-list.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user-circle">
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-user-circle">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
                             <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
                             <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" /></svg> <span
                             class="ms-2">by Admin</span></a></li>
                       <li><a href="blog-details.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-message">
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-message">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M8 9h8" />
                             <path d="M8 13h6" />
@@ -576,9 +619,9 @@
                     <h3 class="blog-card__title"><a href="blog-details.html">Cupidatat Nonproident, Sunt in Culpa qui
                         Officia Deserunt</a></h3>
                     <a href="blog-details.html" class="blog-card__link">
-                      <span class="blog-card__link__front"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                          stroke-linejoin="round"
+                      <span class="blog-card__link__front"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                          height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round"
                           class="icon icon-tabler icons-tabler-outline icon-tabler-chevrons-right">
                           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                           <path d="M7 7l5 5l-5 5" />
@@ -595,28 +638,30 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-6">
               <div class="item blog_home_item">
                 <div class="blog-card">
                   <div class="blog-card__image">
                     <img src="images/blog-1-3.png" alt="Cupidatat Nonproident, Sunt in Culpa qui Officia Deserunt">
                     <img src="images/blog-1-3.png" alt="Cupidatat Nonproident, Sunt in Culpa qui Officia Deserunt">
                     <a href="blog-details.html" class="blog-card__image__link">
-  
+
                     </a>
                     <div class="blog-card__date">04 AUG, 2024</div>
                     <ul class="list-unstyled blog-card__meta">
                       <li><a href="blog-list.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user-circle">
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-user-circle">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
                             <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
                             <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" /></svg> <span
                             class="ms-2">by Admin</span></a></li>
                       <li><a href="blog-details.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-message">
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-message">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M8 9h8" />
                             <path d="M8 13h6" />
@@ -629,9 +674,9 @@
                     <h3 class="blog-card__title"><a href="blog-details.html">Cupidatat Nonproident, Sunt in Culpa qui
                         Officia Deserunt</a></h3>
                     <a href="blog-details.html" class="blog-card__link">
-                      <span class="blog-card__link__front"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                          stroke-linejoin="round"
+                      <span class="blog-card__link__front"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                          height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round"
                           class="icon icon-tabler icons-tabler-outline icon-tabler-chevrons-right">
                           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                           <path d="M7 7l5 5l-5 5" />
@@ -835,9 +880,18 @@
     <div class="main-footer__bottom">
       <div class="container">
         <div class="main-footer__bottom__inner">
-          <p class="main-footer__copyright">
-            &copy; Developed by <span class="dynamic-year"></span> <a href="#">Nogor Solutions Limited</a>
-          </p>
+          <div class="row">
+            <div class="col-lg-6">
+              <p class="main-footer__copyright text-center text-lg-start">
+                Copyright © 2024. All rights reserved
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <p class="main-footer__copyright text-center text-lg-end">
+                Developed by <span class="dynamic-year"></span> <a href="#">Nogor Solutions Limited</a>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
