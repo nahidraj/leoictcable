@@ -1131,8 +1131,8 @@ p {
   padding-bottom: 19px;
 }
 
-.about-one__content__text {
-  margin: 0 0 28px;
+.about-one__content p {
+  margin: 0 0 24px;
 }
 
 @media (min-width: 1200px) {
@@ -2455,6 +2455,16 @@ p {
   bottom: 15px;
 }
 
+.about_us_page {
+  margin-top: 0;
+  margin-bottom: -100px;
+}
+.about_us_page .main .about-one__image {
+  float: left;
+  margin-right: 55px;
+  margin-bottom: 10px;
+}
+
 .team-page-section {
   margin-top: 100px;
 }
@@ -3327,6 +3337,12 @@ p {
   display: block;
   position: relative;
   transition: all 0.4s ease;
+}
+
+.gallery-one__card .gall_name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
 }
 
 .gallery-one__card__icon::after,

@@ -101,6 +101,12 @@
   transition: all 0.4s ease;
 }
 
+.gallery-one__card .gall_name {
+  font-size: 24px;
+  font-weight: 700;
+  color: $white;
+}
+
 .gallery-one__card__icon::after,
 .gallery-one__card__icon::before {
   content: "";
