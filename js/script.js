@@ -61,10 +61,16 @@ $(function () {
   // $('.blog_slider_next').on('click', function () {
   //   $('.blog_slider').slick('slickNext');
   // });
-  $('.masonry-layout').masonry({
-    itemSelector: '.col-md-6', // Or you can use .col-lg-4 if you want more specific targeting
-    columnWidth: '.col-md-6', // Adjust this if your columns have different widths
-    percentPosition: true
+  $(document).ready(function() {
+    var $masonryLayout = $('.masonry-layout');
+    
+    $masonryLayout.imagesLoaded(function() {
+      $masonryLayout.masonry({
+        itemSelector: '.col-md-6', // Or you can use .col-lg-4 if you want more specific targeting
+        columnWidth: '.col-md-6',  // Adjust this if your columns have different widths
+        percentPosition: true
+      });
+    });
   });
   // Create scenes
   $(".content").each(function (i) {
