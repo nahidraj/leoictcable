@@ -181,27 +181,27 @@
   padding: 51px;
 }
 
-.faq-one__video .video-popup {
-  width: 48px;
-  height: 48px;
+.video-popup {
+  width: 68px;
+  height: 68px;
   background-color: var(--ienet-white, #fff);
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  font-size: 15px;
+  font-size: 20px;
   color: var(--ienet-base, #DF2339);
   position: relative;
 }
 
-.faq-one__video .video-popup:hover {
+.video-popup:hover {
   background-color: var(--ienet-base, #DF2339);
   color: var(--ienet-white, #fff);
 }
 
-.faq-one__video .video-popup .ripple,
-.faq-one__video .video-popup .ripple:before,
-.faq-one__video .video-popup .ripple:after {
+.video-popup .ripple,
+.video-popup .ripple:before,
+.video-popup .ripple:after {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -213,19 +213,24 @@
   border-radius: 50%;
 }
 
-.faq-one__video .video-popup .ripple:before {
+.video-popup .ripple:before {
   animation-delay: 0.9s;
   content: "";
   position: absolute;
 }
 
-.faq-one__video .video-popup .ripple::after {
+.faq-one__image{
+  border-radius: 200px;
+  overflow: hidden;
+}
+
+.video-popup .ripple::after {
   animation-delay: 0.5s;
   content: "";
   position: absolute;
 }
 
-.faq-one__video .video-popup::after {
+.video-popup::after {
   position: absolute;
   left: -13px;
   top: -13px;
