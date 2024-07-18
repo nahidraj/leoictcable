@@ -1,0 +1,128 @@
+.factory_counter_area {
+  margin-top: 100px;
+}
+
+.numbers {
+  position: relative;
+}
+
+.numbers .g-img {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  right: 30px;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.numbers .g-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.numbers .item {
+  width: 300px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.numbers .item:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-right-color: transparent;
+  border-radius: 50%;
+  -webkit-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.numbers .item h3 {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.numbers .item .sm-title {
+  font-size: 18px;
+}
+
+.numbers .item .icon {
+  font-size: 18px;
+
+  svg {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 13px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    padding: 5px;
+  }
+}
+
+.numbers.style2 .item:after {
+  border: 0;
+  background: #FFA88C;
+  opacity: .1;
+}
+
+.numbers.num-dark {
+  background: #141414;
+  color: #fff;
+}
+
+.numbers.num-dark .item:after {
+  border-color: rgba(255, 255, 255, 0.1);
+  border-right-color: transparent;
+}
+
+.numbers.num-dark .item .icon {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.numbers.num-dark .item h3 {
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+}
+
+.factory_visits {
+  .factory_visits_main {
+    margin-top: 30px;
+  }
+}
+
+.factory_address_area {
+  margin-top: 100px;
+
+  .address_main {
+    padding-top: 54px;
+
+    .contact_map {
+      padding: 24px;
+      height: 340px;
+      iframe {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
