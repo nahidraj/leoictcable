@@ -1,0 +1,28 @@
+@import "../variable/variable";
+@import "../mixin/font";
+
+.why_us_area {
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  margin-top: 100px;
+
+  .overlay {
+    background-color: rgba(247, 245, 241, 0.6);
+    padding: 80px 0;
+  }
+
+  .faq-one__content__box {
+    display: flex;
+    align-items: center;
+
+    .faq-one__content__box__icon {
+      background-color: $white;
+    }
+
+    .faq-one__content__box__title {
+      margin: 0;
+      font-size: 24px;
+    }
+  }
+}

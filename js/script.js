@@ -78,7 +78,6 @@ $(function () {
     let target2 = $(this).find(".about-one__content");
     let target3 = $(this).find(".blog_home_item");
     let target4 = $(this).find(".faq_info");
-    let target5 = $(this).find(".service-one__item");
     let tl = gsap.timeline({
       scrollTrigger: {
         trigger: $(this),
@@ -126,17 +125,6 @@ $(function () {
           opacity: 0,
           x: 60,
           stagger: 0.5,
-        },
-        0
-      );
-    }
-    if (target5.length) {
-      tl.from(
-        target5,
-        1, {
-          opacity: 0,
-          x: 60,
-          stagger: 0.1,
         },
         0
       );

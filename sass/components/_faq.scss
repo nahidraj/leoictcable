@@ -113,9 +113,9 @@
 
 .faq-one__content__box {
   position: relative;
-  padding: 0 0 0 98px;
-  min-height: 73px;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
+  gap: 24px;
+  display: flex;
 }
 
 .faq-one__content__box__icon {
@@ -129,11 +129,10 @@
   justify-content: center;
   overflow: hidden;
   background-color: var(--ienet-gray, #F7F5F1);
-  position: absolute;
-  left: 0;
-  top: 4px;
   z-index: 2;
   transition: all 400ms ease;
+  flex: 0 0 auto;
+  position: relative;
 }
 
 .faq-one__content__box__icon::after {

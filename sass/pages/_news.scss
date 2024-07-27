@@ -26,6 +26,7 @@
 
 .blog-one--page {
   padding: 100px 0;
+  padding-bottom: 0;
 }
 
 @media (max-width: 767px) {
@@ -532,20 +533,23 @@
   background-color: var(--ienet-base, #DF2339);
   color: var(--ienet-white, #fff);
 }
-.blog_sidebar{
+
+.blog_sidebar {
   position: sticky;
   top: 100px;
 }
 
 .blog-details__image {
   position: relative;
-  margin-bottom: 27px;
+  margin-bottom: 30px;
 }
+
 .blog-details__image img {
   max-width: 100%;
   height: auto;
   border-radius: 30px;
 }
+
 .blog-details__image__date {
   height: 30px;
   background-color: var(--ienet-base, #DF2339);
@@ -561,54 +565,41 @@
   left: 30px;
   z-index: 1;
 }
-.blog-details__top-meta {
-  display: flex;
-  align-items: center;
-  gap: 25px;
-  margin: 0 0 17px;
-}
-.blog-details__top-meta li {
-  color: var(--ienet-text, #737177);
-  font-size: 12px;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-}
-.blog-details__top-meta li i {
-  margin-right: 11px;
-  color: var(--ienet-base, #DF2339);
-  position: relative;
-  top: 1px;
-}
-.blog-details__top-meta li a {
-  display: flex;
-  align-items: center;
-  color: inherit;
-  transition: all 500ms ease;
-}
-.blog-details__top-meta li a:hover {
-  color: var(--ienet-base, #DF2339);
-  text-shadow: 0 0 1px currentColor;
-}
+
 .blog-details__title {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 36px;
+  line-height: normal;
   font-weight: 700;
   margin-bottom: 12px;
 }
-.blog-details__text {
-  line-height: 30px;
-  margin: 0 0 30px;
+
+.blog-details__content {
+  p {
+    line-height: 30px;
+    margin: 0 0 30px;
+  }
+
+  ul {
+    font-weight: 500;
+    text-transform: capitalize;
+    list-style: disc;
+    font-size: 18px;
+    line-height: normal;
+    padding-left: 16px;
+
+    li {
+      margin-bottom: 15px;
+    }
+  }
 }
+.blog_inner_image{
+  img{
+    border-radius: 25px;
+  }
+}
+
 .blog-details__list {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-.blog-details__list li {
-  font-weight: 500;
-  text-transform: capitalize;
-  list-style: disc;
-  list-style-position: inside;
-  margin-bottom: 8px;
 }

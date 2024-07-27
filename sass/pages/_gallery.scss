@@ -76,6 +76,8 @@
   transform: scale(1, 0);
   transition: transform 500ms ease;
   transform-origin: bottom center;
+  padding: 24px;
+  text-align: center;
 }
 
 .gallery-one__card__hover .img-popup {

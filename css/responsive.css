@@ -16,11 +16,11 @@
 @media (max-width:1399.98px) {
   .header_area .navbar-nav .nav-item .nav-link {
     font-size: 16px;
-    margin-left: 26px;
+    margin-left: 18px;
   }
 
   .header_area {
-    padding: 0 40px;
+    padding: 0px 22px;
   }
 
   .header_area .navbar-brand img {
@@ -31,8 +31,8 @@
     margin-left: 30px !important;
   }
 
-  .header_area .menu_right_options .action_btn .theme_btn {
-    display: none;
+  .theme_btn {
+    font-size: 16px;
   }
 
   .header_area .menu_right_options {
@@ -40,7 +40,7 @@
   }
 
   .banner_area .slider_item .overlay .title {
-    font-size: 62px;
+    font-size: 54px;
     line-height: normal;
     margin-bottom: 20px;
     margin-top: 12px;
@@ -96,6 +96,39 @@
     font-size: 20px;
     line-height: normal;
   }
+
+  .why_us_area .faq-one__content__box .faq-one__content__box__title {
+    font-size: 22px;
+    line-height: normal;
+  }
+
+  .numbers .item {
+    width: 250px;
+    height: 250px;
+  }
+
+  .numbers .item h3 {
+    font-size: 56px;
+  }
+
+  .numbers .item .sm-title {
+    font-size: 16px;
+  }
+
+  .numbers .item .icon svg {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    padding: 4px;
+  }
+
+  .gutter-y-30 {
+    --bs-gutter-x: 28px;
+  }
+
+  .gutter-x-30 {
+    --bs-gutter-y: 28px;
+  }
 }
 
 @media (max-width:1199.98px) {
@@ -118,7 +151,7 @@
   }
 
   .banner_area .slider_item {
-    min-height: 88vh;
+    min-height: 120vh;
   }
 
   .certified_area .certified_item .text .title {
@@ -157,6 +190,27 @@
   .header_area .container-fluid {
     padding: 0px 20px;
     padding-right: 13px;
+  }
+
+  .about_us_page .main .about-one__image {
+    float: unset;
+  }
+
+  .about_us_page .about-one__content {
+    text-align: left !important;
+  }
+
+  .page-header {
+    padding-top: 118px;
+    padding-bottom: 51px;
+  }
+
+  .gutter-y-30 {
+    --bs-gutter-x: 22px;
+  }
+
+  .gutter-x-30 {
+    --bs-gutter-y: 22px;
   }
 }
 
@@ -229,6 +283,18 @@
     margin-top: 0;
     margin-bottom: 40px;
   }
+
+  .video-popup {
+    margin-bottom: 60px;
+  }
+
+  .about_us_page .main .inner_image {
+    width: 100%;
+  }
+
+  .gallery-one__card .gall_name {
+    font-size: 20px;
+  }
 }
 
 @media (max-width:767.98px) {
@@ -241,7 +307,7 @@
   }
 
   .about-one {
-    padding-bottom: 0;
+    padding-bottom: 80px;
   }
 
   .sec-title__title {
@@ -271,13 +337,61 @@
   .footer-widget__gallery {
     justify-content: center;
   }
-  .products_area .products_menu ul li{
+
+  .products_area .products_menu ul li {
     display: flex;
     overflow-x: auto;
     padding-bottom: 10px;
   }
-  .products_area .products_menu ul li button{
+
+  .products_area .products_menu ul li button {
     flex: 0 0 auto;
+  }
+
+  .faq-one__content__box {
+    margin-bottom: 10px;
+  }
+
+  .page-header {
+    padding-top: 102px;
+    padding-bottom: 39px;
+  }
+
+  .page-header__title {
+    font-size: 26px;
+  }
+
+  .ienet-breadcrumb li {
+    font-size: 15px;
+  }
+
+  .gallery-one__card .gall_name {
+    font-size: 20px;
+  }
+
+  .factory_address_area {
+    margin-top: 0;
+  }
+
+  .gallery-one__card__icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .gallery-one.factory_visits {
+    padding-bottom: 0;
+  }
+
+  .gallery-one {
+    padding-bottom: 0;
+  }
+
+  .career_area_page {
+    padding-top: 60px;
+  }
+
+  .career_area_page .apply_now_form .car_details_main {
+    padding: 24px;
   }
 }
 
@@ -342,7 +456,40 @@
     padding-bottom: 30px;
   }
 
-  .footer-widget {
-    margin-bottom: 15px;
+  .why_us_area .faq-one__content__box .faq-one__content__box__title {
+    font-size: 20px;
+  }
+
+  .our_clients .slider-item img {
+    width: 107px;
+  }
+
+  .our_clients a {
+    margin: 0 15px;
+  }
+
+  .about_us_page .main .about-one__image {
+    margin-right: 0;
+  }
+
+  .about-one__image__two {
+    display: none;
+  }
+
+  .numbers .item {
+    margin: 0 auto;
+  }
+
+  .factory_address_area .contact-one__info__item {
+    display: flex;
+    align-items: center;
+    background-color: var(--ienet-gray, #F7F5F1);
+    border: 1px solid var(--ienet-border-color, #E6E2D9);
+    border-radius: 20px;
+    padding: 18px;
+  }
+
+  .factory_address_area .address_main {
+    padding-bottom: 0 !important;
   }
 }
