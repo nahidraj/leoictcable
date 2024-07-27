@@ -492,10 +492,20 @@
   .factory_address_area .address_main {
     padding-bottom: 0 !important;
   }
+
   .banner_area .slider_item .overlay .sub_title {
     display: inline-block;
   }
+
   .banner_area .banner_text {
     text-align: center !important;
+  }
+
+  .why_us_area {
+    margin-top: 80px;
+  }
+
+  .our_clients {
+    margin-bottom: 80px;
   }
 }
