@@ -230,8 +230,8 @@
   }
 
   .banner_area .slider_item .overlay {
-    padding-top: 180px !important;
-    padding-bottom: 88px;
+    padding-top: 180px;
+    padding-bottom: 164px;
   }
 }
 
@@ -315,6 +315,10 @@
 
   .gallery-one__card .gall_name {
     font-size: 20px;
+  }
+
+  .banner_area .slider_item .overlay {
+    padding-bottom: 84px;
   }
 }
 
