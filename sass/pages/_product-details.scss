@@ -1,0 +1,35 @@
+.product_details_area{
+  margin-top: 100px;
+  .main{
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 24px;
+
+  }
+  .img{
+    border-radius: 15px;
+    overflow: hidden;
+    position: sticky;
+    top: 110px;
+  }
+  .text{
+    .title{
+      @include font(34px, 600);
+      margin-bottom: 24px;
+    }
+    p{
+      margin-bottom: 24px;
+    }
+    ul{
+      margin-top: 24px;
+      padding-left: 15px;
+      margin-bottom: 24px;
+      li{
+        @include font(18px, 500);
+      }
+      li+li{
+        margin-top: 10px;
+      }
+    }
+  }
+}

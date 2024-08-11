@@ -418,6 +418,22 @@
   .career_area_page .apply_now_form .car_details_main {
     padding: 24px;
   }
+
+  .product_details_area .main {
+    padding: 14px;
+  }
+
+  .product_details_area {
+    margin-top: 80px;
+  }
+
+  .product_details_area .text .title {
+    font-size: 26px;
+  }
+
+  .product_details_area .text ul li {
+    font-size: 16px;
+  }
 }
 
 @media (max-width:575.98px) {

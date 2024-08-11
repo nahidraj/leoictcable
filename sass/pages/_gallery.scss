@@ -142,3 +142,15 @@
 .gutter-x-30 {
   --bs-gutter-y: 32px;
 }
+
+.gallery-one-main{
+  .gallery-one__card{
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}

@@ -13,6 +13,10 @@ $(function () {
     }
   });
 
+  // full page loader js
+  $(".fullpage_loader").fadeOut("slow", function () {
+    $(this).remove();
+  });
   // banner slider js
   $(".banner_slider").slick({
     slidesToShow: 1,
@@ -27,10 +31,10 @@ $(function () {
   }).slickAnimation();
 
   // masonry layout gallery
-  $(document).ready(function() {
+  $(document).ready(function () {
     var $masonryLayout = $('.masonry-layout');
-    
-    $masonryLayout.imagesLoaded(function() {
+
+    $masonryLayout.imagesLoaded(function () {
       $masonryLayout.masonry({
         itemSelector: '.col-md-6',
         columnWidth: '.col-md-6',
