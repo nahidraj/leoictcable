@@ -5,11 +5,11 @@
   }
 
   .header_area {
-    padding: 0 40px;
+    padding: 12px 40px;
   }
 
   .navbar-brand img {
-    width: 180px;
+    width: 200px;
   }
 }
 
@@ -20,7 +20,7 @@
   }
 
   .header_area {
-    padding: 0px 22px;
+    padding: 12px 22px;
   }
 
   .header_area .navbar-brand img {
@@ -47,7 +47,7 @@
   }
 
   .banner_text {
-    padding-left: 30px;
+    /* padding-left: 30px; */
   }
 
   .banner_area .slider_item .overlay {
@@ -153,8 +153,8 @@
 
 @media (max-width:1199.98px) {
   .header_area {
-    top: 15px;
-    padding: 0 27px;
+    /* top: 15px; */
+    padding: 14px 0;
   }
 
   .sticky-menu {
@@ -204,8 +204,8 @@
   }
 
   .header_area .container-fluid {
-    padding: 0px 20px;
-    padding-right: 13px;
+    /* padding: 0px 20px; */
+    /* padding-right: 13px; */
   }
 
   .about_us_page .main .about-one__image {
@@ -438,8 +438,8 @@
 
 @media (max-width:575.98px) {
   .header_area {
-    top: 15px;
-    padding: 0 12px;
+    /* top: 15px; */
+    padding: 14px 0;
   }
 
   .mobile-topbar .logo img {

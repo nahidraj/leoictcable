@@ -57,33 +57,83 @@
   0% {
     transform: scaleY(1) rotate(0deg);
   }
+
   49.99% {
     transform: scaleY(1) rotate(135deg);
   }
+
   50% {
     transform: scaleY(-1) rotate(0deg);
   }
+
   100% {
     transform: scaleY(-1) rotate(-135deg);
   }
 }
 
+.u_top_header {
+  background: #1F3562;
+  padding: 12px 80px;
+
+  @media (max-width:1699.98px) {
+    padding: 12px 40px;
+  }
+  @media (max-width:1399.98px) {
+    padding: 12px 26px;
+  }
+
+  .contact_info {
+    gap: 34px;
+
+    li {
+      position: relative;
+
+      &:first-child {
+        &::before {
+          position: absolute;
+          width: 1px;
+          height: 14px;
+          background: rgba(255, 255, 255, 0.4);
+          content: "";
+          top: 50%;
+          transform: translateY(-50%);
+          right: -17px;
+        }
+      }
+    }
+  }
+
+  span,
+  li {
+    font-size: 14px;
+  }
+
+  .social_info {
+    a {
+      color: $white;
+      font-size: 14px;
+      margin-right: 5px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}
+
 .header_area {
   padding: 15px 0;
-  position: absolute;
+  position: relative;
   z-index: 999;
   background-color: transparent;
   width: 100%;
-  top: 20px;
-  left: 0;
-  padding: 0 60px;
-
-  .container-fluid {
-    background-color: $white;
-    border-radius: 80px;
-    padding: 14px 24px;
-    padding-right: 20px;
-  }
+  // top: 20px;
+  // left: 0;
+  padding: 14px 80px;
 
   .navbar {
     padding: 0;
@@ -102,7 +152,7 @@
         color: $black;
         line-height: normal;
         position: relative;
-        margin-left: 40px;
+        margin-left: 30px;
         line-height: 52px;
         position: relative;
 
@@ -113,13 +163,13 @@
 
         &::after {
           width: 19px;
-          height: 6px;
+          height: 4px;
           background-color: transparent;
           border-radius: 100px;
           display: inline-block;
           margin-right: 25px;
           content: "";
-          bottom: 0;
+          bottom: 5px;
           left: 50%;
           transform: translateX(-50%);
           position: absolute;
@@ -131,10 +181,10 @@
           position: absolute;
           left: 50%;
           transform: translateX(-50%);
-          bottom: 0;
+          bottom: 5px;
           content: "";
           width: 20px;
-          height: 6px;
+          height: 4px;
           border-radius: 100px;
           border: 1px solid transparent;
           margin-left: -5px;
@@ -196,13 +246,13 @@
 
         &::after {
           width: 19px;
-          height: 6px;
+          height: 4px;
           background-color: $primary;
           border-radius: 100px;
           display: inline-block;
           margin-right: 25px;
           content: "";
-          bottom: 0;
+          bottom: 4px;
           left: 50%;
           transform: translateX(-50%);
           position: absolute;
@@ -214,10 +264,10 @@
           left: 50%;
           transform: translateX(-50%);
           margin-left: -5px;
-          bottom: 0;
+          bottom: 4px;
           content: "";
           width: 20px;
-          height: 6px;
+          height: 4px;
           border-radius: 100px;
           border: 1px solid $black;
         }
@@ -265,6 +315,31 @@
     .action_btn {
       .theme_btn {
         border-radius: 50px;
+        background: transparent;
+        color: $primary;
+        border: 1px solid $primary;
+        padding: 14px 20px;
+
+        @media (max-width:1399.98px) {
+          padding: 14px 21px;
+          font-size: 14px;
+        }
+
+        &::before {
+          border-top: 28px solid $primary;
+          border-bottom: 28px solid $primary;
+        }
+
+        &::after {
+          border-top: 28px solid $primary;
+          border-bottom: 28px solid $primary;
+        }
+
+        &:hover {
+          border-color: $primary;
+          color: $white;
+
+        }
       }
     }
   }
@@ -294,8 +369,6 @@
   width: 100%;
   transition: all linear 0.2s;
   background-color: $white;
-  border-radius: 100px;
-  padding: 8px 0;
   overflow: hidden;
 }
 

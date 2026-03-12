@@ -119,3 +119,197 @@
     right: 0;
   }
 }
+
+.u_banner_section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .overlay {
+    background: rgba(31, 53, 98, 0.66);
+    padding: 130px 0;
+
+    @media (max-width:991.98px) {
+      padding: 80px 0;
+    }
+
+    .banner_text {
+      h1 {
+        font-weight: 800;
+        font-size: 75.019px;
+        line-height: 126.6%;
+        color: $white;
+        font-family: $exo;
+        padding-right: 100px;
+        margin-bottom: 20px;
+
+        @media (max-width:1399.98px) {
+          font-size: 65px;
+          line-height: 75px;
+          padding-right: 147px;
+        }
+
+        @media (max-width:1199.98px) {
+          font-size: 55px;
+          line-height: 65px;
+          padding-right: 100px;
+        }
+
+        @media (max-width:991.98px) {
+          padding-right: 0;
+        }
+
+        @media (max-width:767.98px) {
+          font-size: 45px;
+          line-height: 55px;
+        }
+
+        @media (max-width:575.98px) {
+          font-size: 35px;
+          line-height: 45px;
+        }
+      }
+
+      p {
+        color: $white2;
+        margin-bottom: 40px;
+      }
+
+      .theme_btn {
+        &::before {
+          border-top: 28px solid $white;
+          border-bottom: 28px solid $white;
+          border-left: 28px solid transparent;
+        }
+
+        &::after {
+          border-top: 28px solid $white;
+          border-bottom: 28px solid $white;
+          border-left: 28px solid transparent;
+        }
+
+        &:hover {
+          color: $black;
+        }
+      }
+
+      .call_us {
+        .box {
+          width: 55px;
+          height: 55px;
+          background-color: #1F3562;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: $white;
+          border-radius: 100%;
+          transition: $transition;
+        }
+
+        .text {
+          color: $white;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 1.2;
+
+          small {
+            font-size: 15px;
+            color: $white2;
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 400;
+          }
+        }
+
+        &:hover {
+          .box {
+            background-color: $primary;
+          }
+        }
+      }
+
+      .arrow {
+        position: relative;
+        top: -10px;
+      }
+    }
+  }
+}
+
+.u_banner_slider {
+  width: 400px;
+  height: 430px;
+  background: rgba(255, 255, 255, 0.26);
+  border-radius: 60px;
+  margin-left: auto;
+  padding: 30px;
+
+  @media (max-width:1199.98px) {
+    width: 375px;
+    height: 398px;
+  }
+
+  @media (max-width:575.98px) {
+    width: 350px;
+    height: 398px;
+  }
+
+  @media (max-width:991.98px) {
+    margin: 0 auto;
+  }
+
+  .banner_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h5 {
+      color: $white;
+      font-size: 24px;
+      font-weight: 700;
+      font-family: $exo;
+    }
+
+    .img {
+      height: 280px;
+
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.4);
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9;
+    padding: 10px;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+      background: $white;
+      color: $primary;
+    }
+  }
+
+  .arrow_left {
+    left: 5px;
+  }
+
+  .arrow_right {
+    right: 5px;
+  }
+}

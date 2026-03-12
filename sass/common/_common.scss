@@ -50,7 +50,7 @@ body {
   @include font(16px, 500);
   color: $black;
   line-height: normal;
-  font-family: "Outfit", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 ::selection {
@@ -63,6 +63,80 @@ p {
   color: $paragraph;
   line-height: 180%;
   font-family: "Poppins", sans-serif;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.pt-100 {
+  padding-top: 100px;
+
+  @media (max-with:1399px) {
+    padding-top: 80px;
+  }
+
+  @media (max-with:991px) {
+    padding-top: 50px;
+  }
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+
+  @media (max-with:1399px) {
+    padding-bottom: 80px;
+  }
+
+  @media (max-with:991px) {
+    padding-bottom: 50px;
+  }
+}
+
+.py-100 {
+  padding: 100px 0;
+
+  @media (max-with:1399px) {
+    padding: 80px 0;
+  }
+
+  @media (max-with:991px) {
+    padding: 50px 0;
+  }
+}
+
+.u_section_title {
+  span {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: $exo;
+    text-transform: uppercase;
+    color: $primary;
+
+    svg {
+      position: relative;
+      top: -2px;
+    }
+  }
+
+  .title {
+    font-family: $exo;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 54px;
+    color: $black;
+    margin-top: 20px;
+
+    @media (max-width:1399.98px) {
+      font-size: 38px;
+      line-height: 48px;
+    }
+
+    @media (max-width:767.98px) {
+      font-size: 34px;
+      line-height: 44px;
+    }
+  }
 }
 
 // reveal image
@@ -232,14 +306,14 @@ p {
   outline: none !important;
   background-color: $primary;
   color: $white;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 600;
   border-radius: 6px;
   letter-spacing: 0;
-  padding: 15px 26px;
-  padding-right: 17px;
+  padding: 15px 30px;
+  padding-right: 20px;
   transition: 500ms;
-  text-transform: capitalize;
+  text-transform: uppercase;
   position: relative;
   z-index: 9;
   overflow: hidden;
@@ -371,7 +445,11 @@ p {
 }
 
 .mb-60 {
-  margin-bottom: 60px
+  margin-bottom: 60px;
+
+  @media (max-width:575.98px) {
+    margin-bottom: 40px;
+  }
 }
 
 .mt-60 {
